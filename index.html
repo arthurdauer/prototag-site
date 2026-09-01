@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProtoTag | Tecnologia para próteses inteligentes</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #10233f;
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e8edf3;
+      background: white;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #123f72;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #18a56b;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #40516a;
+      margin-left: 30px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .hero {
+      min-height: 650px;
+      padding: 100px 8%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #f5faff 0%, #ffffff 60%);
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e7f7f0;
+      color: #16835a;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin-bottom: 28px;
+      color: #102f55;
+    }
+
+    h1 span {
+      color: #16a66a;
+    }
+
+    .hero p {
+      font-size: 21px;
+      color: #5b6b7e;
+      max-width: 680px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #123f72;
+      color: white;
+      text-decoration: none;
+      padding: 15px 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #0d315a;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: #102f55;
+    }
+
+    .section-title p {
+      color: #66768a;
+      font-size: 18px;
+    }
+
+    .problem {
+      background: #f7f9fc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      border: 1px solid #e5ebf2;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #123f72;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #69798b;
+      font-size: 16px;
+    }
+
+    .technology {
+      background: #102f55;
+      color: white;
+    }
+
+    .technology .section-title h2,
+    .technology .section-title p {
+      color: white;
+    }
+
+    .technology .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .technology .card h3 {
+      color: #6de0ae;
+    }
+
+    .technology .card p {
+      color: #d7e2ef;
+    }
+
+    .vision {
+      text-align: center;
+      background: #f5faf8;
+    }
+
+    .vision h2 {
+      font-size: 44px;
+      color: #123f72;
+      margin-bottom: 20px;
+    }
+
+    .vision p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 20px;
+      color: #617286;
+    }
+
+    footer {
+      background: #0b2038;
+      color: white;
+      padding: 50px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer .logo {
+      color: white;
+    }
+
+    footer p {
+      color: #aebdcd;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 20px;
+      }
+
+      h1 {
+        font-size: 45px;
+      }
+
+      section {
+        padding: 65px 20px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Proto<span>Tag</span></div>
+
+    <nav>
+      <a href="#problema">O problema</a>
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#visao">Nossa visão</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="tag">
+        BIOMEDICAL SENSOR TECHNOLOGY
+      </div>
+
+      <h1>
+        A tecnologia que transforma dados em <span>cuidado preventivo.</span>
+      </h1>
+
+      <p>
+        A ProtoTag desenvolve uma solução inteligente para o monitoramento contínuo da interface entre o membro residual e a prótese, com foco inicial na população pediátrica.
+      </p>
+
+      <a href="#tecnologia" class="button">
+        Conheça a ProtoTag
+      </a>
+
+    </div>
+  </section>
+
+  <section class="problem" id="problema">
+
+    <div class="section-title">
+
+      <h2>
+        Crianças crescem. Próteses não.
+      </h2>
+
+      <p>
+        O crescimento infantil pode modificar progressivamente a adaptação da prótese ao membro residual, tornando o acompanhamento uma necessidade contínua.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Monitoramento</h3>
+        <p>
+          Acompanhar continuamente a interação entre o membro residual e a prótese durante a rotina do usuário.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Dados</h3>
+        <p>
+          Transformar informações obtidas por sensores de pressão em dados que possam ser acompanhados ao longo do tempo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Prevenção</h3>
+        <p>
+          Identificar alterações nos padrões de pressão antes que possíveis complicações evoluam.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="tecnologia">
+
+    <div class="section-title">
+
+      <h2>
+        Uma nova abordagem para o monitoramento protético.
+      </h2>
+
+      <p>
+        A ProtoTag integra sensores, conectividade e análise de dados em uma solução desenvolvida para o acompanhamento contínuo.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Sensores de pressão</h3>
+        <p>
+          Sensoriamento da interface entre o membro residual e a prótese.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Bluetooth</h3>
+        <p>
+          Transmissão dos dados coletados para uma plataforma digital.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aplicativo</h3>
+        <p>
+          Organização e acompanhamento das informações coletadas pelo dispositivo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Inteligência artificial</h3>
+        <p>
+          Desenvolvimento de modelos capazes de reconhecer padrões e identificar alterações relevantes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Monitoramento contínuo</h3>
+        <p>
+          Acompanhamento longitudinal dos padrões individuais durante o uso cotidiano.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Foco pediátrico</h3>
+        <p>
+          Tecnologia concebida inicialmente para atender às necessidades específicas de crianças usuárias de próteses.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="vision" id="visao">
+
+    <h2>
+      Nossa visão
+    </h2>
+
+    <p>
+      Transformar o acompanhamento da adaptação protética em um processo contínuo, individualizado e orientado por dados.
+    </p>
+
+  </section>
+
+  <footer>
+
+    <div class="logo">
+      Proto<span>Tag</span>
+    </div>
+
+    <p>
+      Biomedical Sensor Technology
+    </p>
+
+  </footer>
+
+</body>
+</html>
