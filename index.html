@@ -75,6 +75,30 @@
     .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:#4D7B8C}
     h2{font-size:clamp(36px,4.4vw,58px);line-height:1.02;letter-spacing:-.055em;margin:10px 0 0;color:var(--navy)}
     .section-intro{max-width:520px;color:#647684;font-size:17px}
+
+    .product{background:#fff}
+    .product-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+    .product-visual{min-height:540px;border-radius:32px;background:linear-gradient(145deg,#071B2C,#123B54);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+    .product-visual:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(159,234,243,.14);left:-130px;top:-100px;box-shadow:0 0 0 55px rgba(103,217,233,.025),0 0 0 120px rgba(103,217,233,.018)}
+    .limb-wrap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+    .thigh{width:150px;height:340px;border-radius:76px;background:linear-gradient(90deg,#D5A27E,#F0C09B 45%,#D29D79);transform:rotate(2deg);position:relative;box-shadow:inset -12px 0 28px rgba(80,45,28,.13),inset 12px 0 28px rgba(255,255,255,.14)}
+    .socket{position:absolute;width:188px;height:310px;border:13px solid rgba(225,240,246,.76);border-bottom-color:rgba(180,211,222,.82);border-radius:88px 88px 48px 48px;right:60px;top:118px;transform:rotate(3deg);background:rgba(255,255,255,.045);box-shadow:inset 0 0 24px rgba(103,217,233,.08)}
+    .tag{position:absolute;width:112px;height:160px;border-radius:26px;background:linear-gradient(145deg,#F9FEFF,#DDF8FB);right:138px;top:205px;transform:rotate(2deg);box-shadow:0 22px 45px rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.8);z-index:3}
+    .tag:before{content:"";position:absolute;inset:12px;border-radius:19px;border:1px solid #B9DFE7}
+    .tag-dot{position:absolute;width:13px;height:13px;border-radius:50%;background:#52C9DD;box-shadow:0 0 0 8px rgba(82,201,221,.12),0 0 24px rgba(82,201,221,.3)}
+    .td1{left:24px;top:35px}.td2{right:24px;top:35px}.td3{left:24px;bottom:35px}.td4{right:24px;bottom:35px}
+    .tag-label{position:absolute;left:0;right:0;bottom:-34px;color:#C7E7EE;font-size:11px;font-weight:800;text-align:center;letter-spacing:.04em}
+    .visual-caption{position:absolute;left:26px;right:26px;bottom:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:13px 15px;color:#D9EFF3;font-size:12px;backdrop-filter:blur(8px)}
+    .product-copy h2{margin-bottom:18px}
+    .product-copy .lead-product{font-size:18px;color:#5C6E7C;max-width:610px}
+    .how-it-works{display:grid;gap:14px;margin-top:30px}
+    .how-step{display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line)}
+    .how-step:last-child{border-bottom:0}
+    .how-num{width:38px;height:38px;border-radius:12px;background:#EAF9FB;color:#2B7F91;display:grid;place-items:center;font-size:12px;font-weight:900}
+    .how-step strong{display:block;color:var(--navy);font-size:15px;margin-bottom:3px}
+    .how-step span{display:block;color:#718291;font-size:13px;line-height:1.5}
+    .location-note{margin-top:25px;padding:18px 20px;border-radius:18px;background:#F7FBFD;border:1px solid #DCE9EF;color:#466172;font-size:14px}
+    .location-note strong{color:var(--navy)}
     .problem{background:var(--navy);color:#fff;position:relative;overflow:hidden}
     .problem:after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;right:-260px;top:-220px;border:1px solid rgba(103,217,233,.18);box-shadow:0 0 0 45px rgba(103,217,233,.03),0 0 0 110px rgba(103,217,233,.02)}
     .problem h2{color:#fff;max-width:700px}
@@ -132,7 +156,7 @@
     .footer-cta{padding:110px 0;background:linear-gradient(135deg,#071B2C,#10344B);color:#fff;text-align:center;position:relative;overflow:hidden}
     .footer-cta:before,.footer-cta:after{content:"";position:absolute;border:1px solid rgba(103,217,233,.13);border-radius:50%;width:560px;height:560px;top:-200px}.footer-cta:before{left:-260px}.footer-cta:after{right:-260px}
     .footer-cta h2{color:#fff;max-width:850px;margin:12px auto 18px}
-    .footer-cta p{max-width:650px;margin:0 auto 26px;color:#B8C8D3}
+    .footer-cta p{max-width:680px;margin:0 auto 26px;color:#B8C8D3}.contact-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:24px}.contact-card{display:inline-flex;align-items:center;gap:10px;padding:13px 17px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.06);color:#fff;font-weight:700;font-size:13px}.contact-card:hover{background:rgba(255,255,255,.1);transform:translateY(-1px)}.contact-card span{color:#67D9E9;font-size:16px}
     .footer-meta{padding:30px 0;background:#061724;color:#8196A4;font-size:12px}
     .footer-meta-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
     .footer-brand{color:#fff;font-weight:900}
@@ -142,8 +166,82 @@
       .links{display:none}.hero-grid,.tech-grid,.pedi-grid,.ecosystem-grid{grid-template-columns:1fr}.device-stage{min-height:470px}.problem-grid,.market-grid,.timeline{grid-template-columns:1fr}.section-head{display:block}.section-intro{margin-top:16px}.tech-grid,.pedi-grid{gap:32px}.f1{left:0}.f2{right:0}
     }
     @media(max-width:560px){
-      .container{width:min(100% - 24px,1160px)}.nav-inner{height:68px}.hero{padding-top:118px}.hero-actions{flex-direction:column}.btn{width:100%}.device{transform:rotate(-5deg) scale(.84)}.orb{width:380px;height:380px}.ring{width:350px;height:350px}.device-stage{min-height:410px}.floating{transform:scale(.86)}.f1{top:17%}.f2{top:47%}.f3{bottom:7%}.tech-list{grid-template-columns:1fr}.footer-meta-inner{flex-direction:column;align-items:flex-start}
+      .product-grid{grid-template-columns:1fr;gap:38px}.product-visual{min-height:450px}.container{width:min(100% - 24px,1160px)}.nav-inner{height:68px}.hero{padding-top:118px}.hero-actions{flex-direction:column}.btn{width:100%}.device{transform:rotate(-5deg) scale(.84)}.orb{width:380px;height:380px}.ring{width:350px;height:350px}.device-stage{min-height:410px}.floating{transform:scale(.86)}.f1{top:17%}.f2{top:47%}.f3{bottom:7%}.tech-list{grid-template-columns:1fr}.footer-meta-inner{flex-direction:column;align-items:flex-start}
     }
+
+    /* ===== PREMIUM SCROLL EXPERIENCE ===== */
+    html{scroll-padding-top:86px}
+    body{overflow-x:hidden;background:#fff}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+    .scroll-progress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#67D9E9,#2B8DB5,#071B2C);z-index:100;box-shadow:0 0 16px rgba(103,217,233,.55)}
+    .nav{transition:height .35s ease,background .35s ease,box-shadow .35s ease,transform .35s ease}
+    .nav.scrolled{box-shadow:0 10px 30px rgba(7,27,44,.10);background:rgba(255,255,255,.78)}
+    .nav.scrolled .nav-inner{height:66px}
+    .hero{min-height:100vh;display:flex;align-items:center}
+    .hero:after{content:"";position:absolute;inset:auto -10% -180px;height:360px;background:radial-gradient(ellipse,rgba(103,217,233,.14),transparent 65%);filter:blur(12px);pointer-events:none}
+    .hero-grid>div:first-child{position:relative;z-index:3}
+    .device-stage{--parallax:0px;transform:translateY(var(--parallax));transition:transform .12s linear}
+    .orb{animation:orbFloat 7s ease-in-out infinite}
+    .ring{animation:ringPulse 6s ease-in-out infinite}
+    .device{animation:deviceFloat 6s ease-in-out infinite;transform:rotate(-7deg) translate3d(0,0,0)}
+    .sensor{animation:sensorPulse 2.8s ease-in-out infinite}
+    .sensor:nth-child(2){animation-delay:.25s}.sensor:nth-child(3){animation-delay:.5s}.sensor:nth-child(4){animation-delay:.75s}.sensor:nth-child(5){animation-delay:1s}.sensor:nth-child(6){animation-delay:1.25s}
+    .floating{animation:floatCard 5s ease-in-out infinite}
+    .f2{animation-delay:1.2s}.f3{animation-delay:2.1s}
+    @keyframes orbFloat{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-10px,0) scale(1.03)}}
+    @keyframes ringPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.04);opacity:1}}
+    @keyframes deviceFloat{0%,100%{transform:rotate(-7deg) translateY(0)}50%{transform:rotate(-5deg) translateY(-12px)}}
+    @keyframes sensorPulse{0%,100%{box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}50%{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 20px rgba(103,217,233,.12)}}
+    @keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+    .reveal{opacity:0;transform:translateY(42px) scale(.985);filter:blur(7px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1),filter .9s ease}
+    .reveal.visible{opacity:1;transform:none;filter:none}
+    .reveal-left{opacity:0;transform:translateX(-46px);filter:blur(7px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1),filter .9s ease}
+    .reveal-right{opacity:0;transform:translateX(46px);filter:blur(7px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1),filter .9s ease}
+    .visible{opacity:1;transform:none;filter:none}
+    .stagger>*{opacity:0;transform:translateY(22px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
+    .stagger.visible>*{opacity:1;transform:none}
+    .stagger.visible>*:nth-child(1){transition-delay:.05s}.stagger.visible>*:nth-child(2){transition-delay:.13s}.stagger.visible>*:nth-child(3){transition-delay:.21s}.stagger.visible>*:nth-child(4){transition-delay:.29s}.stagger.visible>*:nth-child(5){transition-delay:.37s}.stagger.visible>*:nth-child(6){transition-delay:.45s}.stagger.visible>*:nth-child(7){transition-delay:.53s}.stagger.visible>*:nth-child(8){transition-delay:.61s}.stagger.visible>*:nth-child(9){transition-delay:.69s}.stagger.visible>*:nth-child(10){transition-delay:.77s}
+
+    section{position:relative;isolation:isolate}
+    section:not(.hero):before{content:"";position:absolute;top:0;left:50%;width:min(1160px,calc(100% - 40px));height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#DCE9EF 20%,#DCE9EF 80%,transparent);opacity:.8}
+    .problem{background:linear-gradient(180deg,#F8FBFD 0%,#fff 100%)}
+    .tech{background:linear-gradient(180deg,#fff 0%,#F7FBFD 100%)}
+    .pedi{background:#fff}
+    .ecosystem{background:linear-gradient(180deg,#F7FBFD 0%,#fff 100%)}
+    .market{background:#fff}
+
+    .problem-card,.tech-list .spec,.pillar,.eco-card,.market-card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+    .problem-card:hover,.tech-list .spec:hover,.pillar:hover,.eco-card:hover,.market-card:hover{transform:translateY(-7px);box-shadow:0 22px 55px rgba(7,27,44,.10);border-color:#C8DCE5}
+    .product-visual{position:sticky;top:105px;transform-style:preserve-3d}
+    .product-visual:after{content:"";position:absolute;inset:auto 10% 4%;height:30px;background:rgba(0,0,0,.2);filter:blur(25px);border-radius:50%;opacity:.45}
+    .tag{animation:tagFloat 4.6s ease-in-out infinite;transform-origin:center}
+    @keyframes tagFloat{0%,100%{transform:rotate(2deg) translateY(0)}50%{transform:rotate(1deg) translateY(-8px)}}
+    .tag-dot{animation:tagDot 2.6s ease-in-out infinite}.td2{animation-delay:.4s}.td3{animation-delay:.8s}.td4{animation-delay:1.2s}
+    @keyframes tagDot{0%,100%{opacity:.75;box-shadow:0 0 0 8px rgba(82,201,221,.12),0 0 24px rgba(82,201,221,.3)}50%{opacity:1;box-shadow:0 0 0 14px rgba(82,201,221,.06),0 0 34px rgba(82,201,221,.55)}}
+    .architecture{position:relative;overflow:hidden}
+    .architecture:after{content:"";position:absolute;left:-20%;top:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(103,217,233,.18),transparent);transform:skewX(-20deg);animation:sweep 5s ease-in-out infinite}
+    @keyframes sweep{0%,100%{left:-30%;opacity:0}20%{opacity:1}70%{left:120%;opacity:1}80%{opacity:0}}
+    .arch-item{transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+    .arch-item:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(7,27,44,.08)}
+    .quote{position:relative;overflow:hidden}
+    .quote:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(103,217,233,.11),transparent 65%);transform:translateX(-100%);animation:quoteShine 4.8s ease-in-out infinite}
+    @keyframes quoteShine{0%,30%{transform:translateX(-100%)}70%,100%{transform:translateX(100%)}}
+    .timeline{position:relative}
+    .timeline:before{content:"";position:absolute;left:15px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,#67D9E9,#C9DCE4,transparent)}
+    .timeline .step{position:relative;padding-left:40px}
+    .timeline .step:before{content:"";position:absolute;left:9px;top:8px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid #67D9E9;box-shadow:0 0 0 0 rgba(103,217,233,.25);transition:box-shadow .35s ease,transform .35s ease}
+    .timeline .step:hover:before{transform:scale(1.18);box-shadow:0 0 0 8px rgba(103,217,233,.10)}
+    .footer-cta{overflow:hidden}
+    .footer-cta:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 50% 40%,rgba(103,217,233,.18),transparent 32%);animation:ctaGlow 7s ease-in-out infinite}
+    @keyframes ctaGlow{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+    .footer-cta h2,.footer-cta p,.contact-row,.footer-cta .btn{position:relative;z-index:1}
+    .hero .eyebrow,.hero h1,.hero .lead,.hero .hero-actions,.hero .hero-note,.hero .credibility{animation:heroIn .9s both}
+    .hero h1{animation-delay:.08s}.hero .lead{animation-delay:.18s}.hero .hero-actions{animation-delay:.28s}.hero .hero-note{animation-delay:.38s}.hero .credibility{animation-delay:.48s}
+    @keyframes heroIn{from{opacity:0;transform:translateY(26px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+    @media (max-width:980px){.links{gap:13px}.product-visual{position:relative;top:auto}.hero{min-height:auto}.device-stage{min-height:470px}}
+    @media (max-width:760px){.links a:not(.nav-cta){display:none}.nav-cta{padding:9px 12px}.device-stage{min-height:410px}.product-visual{min-height:460px}.reveal,.reveal-left,.reveal-right{transform:translateY(24px)}section{padding:82px 0}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal,.reveal-left,.reveal-right,.stagger>*{opacity:1!important;transform:none!important;filter:none!important}}
   </style>
 </head>
 <body>
@@ -154,11 +252,13 @@
         <span>ProtoTag</span>
       </a>
       <nav class="links" aria-label="Navegação principal">
+        <a href="#produto">O produto</a>
         <a href="#problema">O problema</a>
         <a href="#tecnologia">Tecnologia</a>
         <a href="#pediatrico">Pediátrico</a>
         <a href="#ecossistema">Ecossistema</a>
         <a href="#mercado">Mercado</a>
+        <a href="https://instagram.com/prototag_" target="_blank" rel="noopener">Instagram</a>
         <a class="nav-cta" href="#contato">Conheça a ProtoTag</a>
       </nav>
     </div>
@@ -202,6 +302,36 @@
             </div>
           </div>
           <div class="device-caption">monitoramento contínuo da interface protética</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="product" id="produto">
+      <div class="container product-grid">
+        <div class="product-visual" aria-label="Representação conceitual do adesivo ProtoTag na interface da prótese">
+          <div class="limb-wrap">
+            <div class="thigh"></div>
+            <div class="socket"></div>
+            <div class="tag">
+              <span class="tag-dot td1"></span><span class="tag-dot td2"></span>
+              <span class="tag-dot td3"></span><span class="tag-dot td4"></span>
+              <div class="tag-label">ProtoTag • conceito</div>
+            </div>
+          </div>
+          <div class="visual-caption">O adesivo fica em contato com a pele e próximo à interface da prótese, acompanhando as pressões geradas durante o uso.</div>
+        </div>
+        <div class="product-copy">
+          <div class="kicker">O produto</div>
+          <h2>Um adesivo eletrônico que acompanha o que acontece entre a criança e a prótese.</h2>
+          <p class="lead-product">A ProtoTag é concebida como um adesivo fino e flexível, com sensores integrados, pensado para monitorar a pressão na região de contato entre o membro residual e o encaixe da prótese.</p>
+          <div class="how-it-works">
+            <div class="how-step"><div class="how-num">01</div><div><strong>Onde ele fica</strong><span>O adesivo é colocado sobre a pele, na região distal da coxa, próximo à área em que o membro residual se relaciona com o encaixe da prótese.</span></div></div>
+            <div class="how-step"><div class="how-num">02</div><div><strong>O que ele percebe</strong><span>Seis sensores TENG acompanham as mudanças de pressão e deformação produzidas enquanto a prótese é utilizada.</span></div></div>
+            <div class="how-step"><div class="how-num">03</div><div><strong>Como o movimento ajuda</strong><span>O próprio movimento pode gerar sinais elétricos pelo efeito triboelétrico, criando a base para uma arquitetura de sensoriamento autoalimentada.</span></div></div>
+            <div class="how-step"><div class="how-num">04</div><div><strong>Como os dados chegam</strong><span>Os sinais são processados pela eletrônica do dispositivo e enviados por Bluetooth Low Energy para uma plataforma digital.</span></div></div>
+          </div>
+          <div class="location-note"><strong>Em uma frase:</strong> o ProtoTag transforma a pressão e o movimento da interface protética em dados que podem ser acompanhados ao longo do tempo.</div>
         </div>
       </div>
     </section>
@@ -337,9 +467,13 @@
     <section class="footer-cta" id="contato">
       <div class="container" style="position:relative;z-index:1">
         <div class="kicker" style="color:#67D9E9">ProtoTag</div>
-        <h2>Menos incerteza. Mais dados. Mais cuidado.</h2>
-        <p>Uma proposta de tecnologia assistiva pensada para transformar o monitoramento da interface protética e acompanhar o crescimento infantil com uma nova camada de informação.</p>
-        <a class="btn btn-secondary" href="#top">Voltar ao início</a>
+        <h2>Converse com a equipe ProtoTag.</h2>
+        <p>Quer conhecer melhor a solução, acompanhar o desenvolvimento do projeto ou conversar sobre parcerias? Entre em contato com nossa equipe.</p>
+        <div class="contact-row">
+          <a class="contact-card" href="mailto:prototag1@gmail.com"><span>✉</span> prototag1@gmail.com</a>
+          <a class="contact-card" href="https://instagram.com/prototag_" target="_blank" rel="noopener"><span>◎</span> @prototag_</a>
+        </div>
+        <div style="margin-top:26px"><a class="btn btn-secondary" href="#top">Voltar ao início</a></div>
       </div>
     </section>
   </main>
@@ -349,10 +483,50 @@
       <div class="footer-meta-inner">
         <div class="footer-brand">ProtoTag</div>
         <div>Healthtech brasileira em estágio inicial de desenvolvimento.</div>
+        <a href="https://instagram.com/prototag_" target="_blank" rel="noopener">instagram.com/prototag_ ↗</a>
       </div>
       <div class="source-links"><a href="https://hsph.harvard.edu/research/health-systems-innovation-lab/work/hsil-hackathon-2026-building-high-value-health-systems-leveraging-ai/" target="_blank" rel="noopener">HSIL Hackathon 2026</a><span>·</span><a href="https://www.hospitalar.com/" target="_blank" rel="noopener">Hospitalar</a><span>·</span><a href="https://www.abss.com.br/" target="_blank" rel="noopener">ABSS</a></div>
       <div class="disclaimer">A ProtoTag é uma healthtech em estágio inicial de desenvolvimento. Características técnicas, arquitetura final dos sensores, desempenho, capacidade de autoalimentação, algoritmos, aplicações clínicas e caminho regulatório ainda dependem de engenharia, testes, validação científica e requisitos regulatórios aplicáveis.</div>
     </div>
   </footer>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <script>
+    (function(){
+      const nav=document.querySelector('.nav');
+      const progress=document.querySelector('.scroll-progress');
+      const revealEls=document.querySelectorAll('section .section-head, section > .container > *, .product-grid > *, .ecosystem-grid > *, .market-grid > *');
+      const staggerEls=document.querySelectorAll('.problem-grid,.tech-list,.pillars,.timeline,.credibility');
+      revealEls.forEach((el,i)=>{
+        if(el.closest('.hero')) return;
+        if(el.classList.contains('section-head') || el.matches('.product-grid > *:first-child')) el.classList.add('reveal');
+        else el.classList.add(i%2?'reveal-right':'reveal-left');
+      });
+      staggerEls.forEach(el=>el.classList.add('stagger'));
+      const io=new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})
+      },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+      document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.stagger').forEach(el=>io.observe(el));
+
+      function onScroll(){
+        const h=document.documentElement.scrollHeight-window.innerHeight;
+        progress.style.width=(h>0?(window.scrollY/h)*100:0)+'%';
+        if(window.scrollY>18) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+        const stage=document.querySelector('.device-stage');
+        if(stage){
+          const r=stage.getBoundingClientRect();
+          const p=Math.max(-1,Math.min(1,(window.innerHeight/2-r.top)/(window.innerHeight/1.2)));
+          stage.style.setProperty('--parallax',(p*-18).toFixed(1)+'px');
+        }
+      }
+      window.addEventListener('scroll',onScroll,{passive:true});
+      onScroll();
+
+      document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(){
+        const target=document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      }));
+    })();
+  </script>
 </body>
 </html>
